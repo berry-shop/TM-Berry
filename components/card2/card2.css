@@ -1,0 +1,17 @@
+.card__item {
+   position: absolute;
+   background-color: #ffffff;
+   border-radius: 6px;
+   box-shadow: 0 5px 12px #cacaca77;
+}
+
+.card__item-title h2 {
+   margin-left: 20px;
+}
+
+.card__item-subtitle p {
+   margin-left: 20px;
+}
+
+.card__item-img img {
+}
