@@ -38,6 +38,9 @@
 }
 
 .pagination-number {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   text-align: center;
   color: #1a1a1a;
 }
