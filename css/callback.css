@@ -76,7 +76,7 @@
 .modal-notification {
   margin-top: 6px;
   text-align: center;
-  display: block;
+  display: none;
 }
 
 .message {
