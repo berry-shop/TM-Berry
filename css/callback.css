@@ -76,7 +76,7 @@
 .modal-notification {
   margin-top: 6px;
   text-align: center;
-  display: none;
+  display: block;
 }
 
 .message {
@@ -97,11 +97,11 @@
   .callback-modal {
     border-radius: 4px;
     padding: 14px 38px;
-    max-width: 210px;
+    max-width: 240px;
   }
 
   #messageInput {
-    width: 186px;
+    width: 217px;
     height: 36px;
     margin-bottom: 8px;
     padding: 2px 10px;
@@ -135,12 +135,39 @@
 
   .callback-modal {
     border-radius: 4px;
-    padding: 12px 34px;
+    padding: 13px 40px;
+    max-width: 260px;
+  }
+
+  #messageInput {
+    width: 241px;
+    height: 35px;
+    margin-bottom: 7px;
+    padding: 2px 8px;
+    font-size: 15px;
+    border-radius: 4px;
+  }
+
+  #sendMessageButton {
+    width: 100%;
+    height: 42px;
+    font-size: 14px;
+  }
+
+  .callback-modal__header {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 368px) {
+  .callback-modal {
+    border-radius: 4px;
+    padding: 13px 44px;
     max-width: 200px;
   }
 
   #messageInput {
-    width: 182px;
+    width: 190px;
     height: 32px;
     margin-bottom: 7px;
     padding: 2px 8px;
