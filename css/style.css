@@ -165,7 +165,6 @@ header {
   }
 }
 
-
 .title--gradient {
   font-weight: 700;
   font-size: 39px;
@@ -385,7 +384,6 @@ header {
   transform: translateY(-4px);
 }
 
-
 .to__start-visible {
   opacity: 1;
   visibility: visible;
@@ -439,16 +437,15 @@ header {
 
 @media (max-width: 1200px) {
   .header--all {
-    padding-top: 60px !important;
+    padding-top: 68px !important;
   }
 }
 
 @media (max-width: 990px) {
   .header--all {
-    padding-top: 40px !important;
+    padding-top: 52px !important;
   }
 }
-
 
 @media (max-width: 902px) {
   .to-start a {
