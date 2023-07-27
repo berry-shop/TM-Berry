@@ -1,0 +1,268 @@
+.about__title h2 {
+  font-size: 52.5px;
+  color: #181818;
+  text-align: center;
+  padding-top: 110px;
+  margin-top: 0;
+}
+
+.about__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.about__item:last-child {
+  padding-bottom: 135px;
+}
+
+.about__item-img {
+  background: linear-gradient(120deg,
+      rgb(255, 57, 77) 0%,
+      rgba(255, 99, 99, 1) 100%);
+  width: 140px;
+  height: 140px;
+  border-radius: 100%;
+  max-width: 100%;
+  max-height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.about__item-img img {
+  width: 56%;
+  height: auto;
+}
+
+.about__item-text p {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-top: 18px;
+  padding-bottom: 18px;
+  width: 50%;
+  text-align: left;
+  margin-left: auto;
+  font-weight: 400;
+  font-size: calc(13px + 5 * (100vw / 1920)) !important;
+  line-height: 125%;
+  color: #181818;
+}
+
+@media (max-width: 767px) {
+  .about__item-text p {
+    font-size: calc(14px + (4 + 4 * 0.7) * ((100vw - 320px) / 1920)) !important;
+  }
+}
+
+.about__item-text {
+  position: relative;
+  padding-left: 45px;
+}
+
+.item__text--first::after {
+  position: absolute;
+  content: "";
+  width: 14px;
+  height: 14px;
+  border-radius: 100%;
+  background-color: #c1c1c1;
+  top: calc(51% - 7px);
+  left: calc(50% - 7px);
+}
+
+.about__item-text::after {
+  position: absolute;
+  content: "";
+  width: 14px;
+  height: 14px;
+  border-radius: 100%;
+  background-color: #c1c1c1;
+  top: calc(51% - 7px);
+  left: calc(50% - 7px);
+}
+
+.item__text--first::before {
+  position: absolute;
+  content: "";
+  width: 4px;
+  height: 100%;
+  background-color: #c1c1c1;
+  top: 0;
+  left: calc(50% - 2px);
+}
+
+.item__text--last::before {
+  position: absolute;
+  content: "";
+  width: 4px;
+  height: 50%;
+  background-color: #c1c1c1;
+  top: 0;
+  left: calc(50% - 2px);
+}
+
+.text-right p {
+  text-align: right;
+  margin-right: auto;
+  margin-left: 0;
+}
+
+.text-right {
+  padding-left: 0;
+  padding-right: 45px;
+}
+
+@media (max-width: 1149px) {
+  .about__title h2 {
+    font-size: 47px;
+  }
+
+  .about__item-img {
+    width: 134px;
+    height: 134px;
+  }
+
+  .about__item-text p {
+    font-size: 17px;
+    line-height: 115%;
+    padding: 16px 0;
+  }
+}
+
+@media (max-width: 992px) {
+  .about__title h2 {
+    font-size: 45px;
+    padding-top: 70px;
+  }
+
+  .about__item:last-child {
+    padding-bottom: 55px;
+  }
+
+  .about__item-img {
+    width: 130px;
+    height: 130px;
+  }
+}
+
+@media (max-width: 902px) {
+  .about__title h2 {
+    font-size: 42px;
+  }
+
+  .about__item-text p {
+    font-size: 17px;
+    padding: 12px 0;
+  }
+
+  .about__item-img {
+    width: 126px;
+    height: 126px;
+  }
+}
+
+@media (max-width: 768px) {
+  .about__title h2 {
+    font-size: 40px;
+  }
+
+  .about__item-img {
+    width: 124px;
+    height: 124px;
+  }
+}
+
+@media (max-width: 607px) {
+  .about__title h2 {
+    font-size: 38px;
+  }
+
+  .about__item-text p {
+    font-size: 17px;
+    padding: 8px 0;
+  }
+}
+
+@media (max-width: 515px) {
+  .about__title h2 {
+    font-size: 35px;
+  }
+
+  .about__item-text p {
+    font-size: 17px;
+  }
+}
+
+@media (max-width: 470px) {
+  .about__title h2 {
+    font-size: 32.5px;
+  }
+
+  .about__item-text p {
+    font-size: 16px;
+  }
+
+  .about__item-img {
+    width: 124px;
+    height: 124px;
+  }
+}
+
+@media (max-width: 430px) {
+  .about__title h2 {
+    font-size: 30px;
+    letter-spacing: 0.1em;
+  }
+
+  .about__item-text p {
+    font-size: 15px;
+  }
+
+  .about__item-img {
+    width: 122px;
+    height: 122px;
+  }
+}
+
+@media (max-width: 391px) {
+  .about__title h2 {
+    font-size: 29px;
+  }
+
+  .about__item-text p {
+    font-size: 14px;
+    padding: 6px 0;
+  }
+
+  .about__item-img {
+    width: 112px;
+    height: 112px;
+  }
+}
+
+@media (max-width: 360px) {
+  .about__title h2 {
+    font-size: 27px;
+  }
+
+  .about__item-text p {
+    font-size: 12.5px;
+    padding: 4px 0;
+  }
+
+  .about__item-img {
+    width: 104px;
+    height: 104px;
+  }
+
+  .item__text--first::before {
+    width: 3px;
+  }
+
+  .about__item-text::after {
+    width: 11px;
+    height: 11px;
+    left: calc(50% - 6px);
+  }
+}
