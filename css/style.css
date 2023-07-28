@@ -1085,9 +1085,13 @@ header {
   }
 
   .cart__quantity {
-    width: 17px;
-    height: 17px;
-    font-size: 15px;
+    width: 16px;
+    height: 16px;
+    font-size: 14px;
+  }
+
+  .burger__align {
+    gap: 22px;
   }
 }
 
@@ -1110,11 +1114,7 @@ header {
   .cart__quantity {
     width: 13px;
     height: 13px;
-    font-size: 12px;
-  }
-
-  .burger__align {
-    gap: 22px;
+    font-size: 11px;
   }
 
   .nav ul {
