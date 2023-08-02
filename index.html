@@ -20,8 +20,6 @@
     <!-- fonts preload -->
   <link rel="preload" href="../src/fonts/Rubik-Regular.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="../src/fonts/Rubik-Medium.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="preload" href="../src/fonts/Rubik-Regular.ttf" as="font" type="font/ttf" crossorigin>
-  <link rel="preload" href="../src/fonts/Rubik-Medium.ttf" as="font" type="font/ttf" crossorigin>
   <!-- favicon -->
   <link rel="apple-touch-icon" sizes="180x180" href="./img/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon-32x32.png">
@@ -123,7 +121,7 @@
                  -->
               </div>
 
-              <button type="button" class="burger" data-burger aria-label="меню" aria-expanded="false">
+              <button type="button" class="burger" tabindex="0" data-burger aria-label="меню" aria-expanded="false">
                 <span class="burger__line"></span>
               </button>
             </div>
@@ -272,7 +270,7 @@
                       (068) 368 55 57
                     </a>
                     <span class="phone-name">
-                      <span aria-label="номер телефону" style="visibility: hidden; opacity: 0;" class="material-symbols-outlined">
+                      <span aria-label="номер телефону" style="visibility: hidden; opacity: 0;" class="material-symbols-outlined icon-hidden">
                         call
                       </span>
                       Роман
@@ -284,7 +282,7 @@
                 </ul>
                 <div class="howToGet__modal">
                   <div class="close-box">
-                    <i role="button" tabindex="0" aria-label="закрити вікно" style="cursor: pointer;" class="fa-solid fa-xmark howToGet__modal-close"></i>
+                    <i role="button" tabindex="0" aria-label="закрити вікно" style="cursor: pointer; margin-bottom: 4px;" class="fa-solid fa-xmark howToGet__modal-close"></i>
                   </div>
                   <p style="margin: 0;">
                     <strong>Від</strong> Ⓜ️Нивки на 🚐маршрутці №186/🚍автобусі №90 доїхати до зупинки вул. Ігоря Турчіна ~15 хвилин. Пройти 350 метрів в сторону вул.
