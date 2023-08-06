@@ -623,11 +623,15 @@ button {
   }
 
   .dilvery__list-popup {
+    font-size: 15.4px;
+  }
+
+  .dilvery__list-popup {
     font-size: 16.2px;
   }
 
   .send-toworrow {
-    font-size: 13.3px;
+    font-size: 13px;
   }
 
   .catalog__img {
@@ -826,7 +830,7 @@ button {
   }
 
   .description__img {
-    width: 220px;
+    width: 217px;
   }
 
   .popup__info p {
