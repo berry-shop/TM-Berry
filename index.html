@@ -60,7 +60,7 @@
             <a href="./index.html" class="logo" title="berry-shop.github.io/TM-Berry/"><img loading="lazy" src="./img/logo.png" alt="логотип комапнії Berry"></a>
             <nav class="nav" data-nav>
               <ul class="nav__list">
-                <li class="nav__item nav__item-icon"><i class="fa-solid fa-house burger-visible" title="Головна" aria-label="головна"></i><a href="./index.html" class="nav__link">Головна</a></li>
+                <li class="nav__item nav__item-icon"><i class="fa-solid fa-house burger-visible" title="Головна" aria-label="головна"></i><a href="#important" class="nav__link">Головна</a></li>
                 <li class="nav__item nav__item-icon"><i class="fa-solid fa-list-ul burger-visible" title="Каталог" aria-label="каталог"></i><a href="#catalog" class="nav__link">Каталог</a></li>
                 <li class="nav__item nav__item-icon"><i class="fa-regular fa-address-book burger-visible" title="Контакти" aria-label="контакти"></i><a href="#contacts" class="nav__link">Контакти</a></li>
                 <li class="nav__item nav__item-icon"><i class="fa-regular fa-circle-question burger-visible" title="Про нас" aria-label="про нас"></i><a href="#about" class="nav__link">Про нас</a></li>
@@ -153,9 +153,7 @@
               <input type="text" name="phone" id="messageInput"/>
               <button type="button" id="sendMessageButton">Відправити</button>
               <div class="modal-notification">
-                <span class="message">
-                  Ваш запит буде оброблено протягом 10 хвилин <i class="fa-solid fa-check"></i>
-                </span>
+
               </div>
             </div>
           </div>
@@ -281,35 +279,38 @@
                   <div class="close-box">
                     <i role="button" tabindex="0" aria-label="закрити вікно" style="cursor: pointer; margin-bottom: 4px;" class="fa-solid fa-xmark howToGet__modal-close"></i>
                   </div>
-                  <p style="margin: 0;">
-                    <strong>Від</strong> Ⓜ️Нивки на 🚐маршрутці №186/🚍автобусі №90 доїхати до зупинки вул. Ігоря Турчіна ~15 хвилин. Пройти 350 метрів в сторону вул.
-                    Туполєва 11д ~5 хвилин
-                  </p> 
-                  <p style="margin: 0; margin-top: 5px;">
-                    <strong>Від</strong> Ⓜ️Нивки на 🚍автобусі №14 доїхати до зупинки Сади ~20 хвилин. Пройти 600 метрів в сторону вул.
-                    Туполєва 11д ~8 хвилин
-                  </p>
-                  <p style="margin: 0; margin-top: 5px;">
-                    <strong>Від</strong> Ⓜ️Нивки на 🚎тролейбусі №36А доїхати до зупинки вул. Стеценка ~15 хвилин. Пройти 1 кілометр в сторону вул.
-                    Туполєва 11д ~15 хвилин
-                  </p>
+                  <ul style="padding: 0;">
+                    <li style="margin: 0;">
+                      <strong>Від</strong> Ⓜ️Нивки на 🚐маршрутці №186/🚍автобусі №90 доїхати до зупинки вул. Ігоря Турчіна ~15 хвилин. Пройти 350 метрів в сторону вул.
+                      Туполєва 11д ~5 хвилин
+                    </li> 
+                    <li style="margin: 0; margin-top: 5px;">
+                      <strong>Від</strong> Ⓜ️Нивки на 🚍автобусі №14 доїхати до зупинки Сади ~20 хвилин. Пройти 600 метрів в сторону вул.
+                      Туполєва 11д ~8 хвилин
+                    </li>
+                    <li style="margin: 0; margin-top: 5px;">
+                      <strong>Від</strong> Ⓜ️Нивки на 🚎тролейбусі №36А доїхати до зупинки вул. Стеценка ~15 хвилин. Пройти 1 кілометр в сторону вул.
+                      Туполєва 11д ~15 хвилин
+                    </li>
+                  </ul>
                 </div>
               </div>
 
               <div class="contacts__item contacts__right contacts__descr">
-                <p>
+                <div>
                   Пральний порошок ТМ&nbsp;BERRY виробляється в&nbsp;Україні з&nbsp;червня 2017&nbsp;року. Цей проєкт
                   виник та
                   реалізувався за&nbsp;підтримки уряду Великобританії, внаслідок перемоги на&nbsp;конкурсі
                   підприємницьких
                   ініціатив.
-                  <br><i style="opacity: 0; visibility: hidden;" class="fa-solid fa-location-dot"></i>
-                  <br><span style="font-weight: 500;">Графік роботи:</span> 
-                  <br>пн - пт 
-                  <br>9:00-18:00
-                  <br>сб - нд 
-                  <br><span style="color: #ff394d;">вихідний</span> 
-                </p>
+                  <ul style="margin: 0; padding: 0; margin-top: 8px;">
+                    <li style="font-weight: 500;">Графік роботи:</li>
+                    <li>пн - пт</li>
+                    <li>9:00-18:00</li>
+                    <li>сб - нд</li>
+                    <li style="color: #ff394d;">вихідний</li>
+                  </ul>
+                </div>
               </div>
 
             </div>
@@ -421,20 +422,26 @@
                   <i role="button" tabindex="0" aria-label="закрити вікно" class="fa-xmark fa-solid close-refund" style="font-size: 28px; display: flex; justify-content: flex-end; margin-top: 6px; cursor: pointer;"></i>
                 </div>
                 <span style="font-weight: 500;">Умови повернення та&nbsp;обміну</span>
-                <br>Компанія здійснює повернення та&nbsp;обмін цього товару відповідно до&nbsp;вимог законодавства.
+                <br>Компанія здійснює повернення та&nbsp;обмін цього товару відповідно до&nbsp;вимог <a href="https://zakon.rada.gov.ua/laws/show/1023-12" class="law-link" target="_blank">законодавства України</a>.
 
                 <span style="font-weight: 500;"><br>Терміни повернення</span>
+                <span style="visibility: hidden; opacity: 0;" class="material-symbols-outlined icon-hidden">
+                  call
+                </span>
                 <br>Повернення можливе протягом 14&nbsp;днів після отримання (для товарів належної якості).
 
                 Зворотня доставка товарів здійснюється за&nbsp;домовленістю.
 
                 <br>Згідно з&nbsp;чинним законодавством ви&nbsp;можете повернути товар належної якості або обміняти його, у&nbsp;разі:
 
-                товар не&nbsp;був у&nbsp;вживанні і&nbsp;не&nbsp;має слідів використання споживачем: подряпин, сколів, потертостей, плям і
-                т.п.;
-                товар повністю укомплектований і&nbsp;збережена фабрична упаковка;
-                збережені всі ярлики і&nbsp;заводське маркування;
-                товар зберігає товарний вигляд і&nbsp;свої споживчі властивості.
+                <ol class="refund__list">
+                  <li> товар не&nbsp;був у&nbsp;вживанні і&nbsp;не&nbsp;має слідів використання споживачем: подряпин,
+                    сколів, потертостей, плям і
+                    т.п.;</li>
+                  <li> товар повністю укомплектований і&nbsp;збережена фабрична упаковка;</li>
+                  <li> збережені всі ярлики і&nbsp;заводське маркування;</li>
+                  <li> товар зберігає товарний вигляд і&nbsp;свої споживчі властивості.</li>
+                </ol>
               </div>
             </div>
 
@@ -466,15 +473,15 @@
 
   </div>
 
-  <script src="./js/burger.js"></script>
+  <script src="./js/cardsArray.js"></script>
+  <script src="./js/message.js"></script>
+  <script src="./js/phoneMask.js"></script>
   <script src="./js/fixed__menu.js"></script>
   <script src="./js/anchor.js"></script>
-  <script src="./js/massage.js"></script>
+  <script src="./js/checkbox.js"></script>
+  <script defer src="./js/burger.js"></script>
   <script defer src="./js/callbackModal.js"></script>
-  <script src="./js/phoneMask.js"></script>
-  <script src="./js/cardsArray.js"></script>
   <script defer src="./js/refundModal.js"></script>
-  <script defer src="./js/checkbox.js"></script>
   <script defer src="./js/howToGet.js"></script>
 </body>
 
