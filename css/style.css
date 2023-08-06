@@ -380,7 +380,7 @@ header {
 }
 
 .stop-scroll {
-  overflow: hidden;
+  overflow: hidden !important;
 }
 
 .to-start {
