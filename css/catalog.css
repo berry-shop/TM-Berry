@@ -618,20 +618,16 @@ button {
     font-size: 35px;
   }
 
+  .dilvery__list-popup {
+    font-size: 15.5px !important;
+  }
+
   .description__img {
     width: 255px;
   }
 
-  .dilvery__list-popup {
-    font-size: 15.4px;
-  }
-
-  .dilvery__list-popup {
-    font-size: 16.2px;
-  }
-
   .send-toworrow {
-    font-size: 13px;
+    font-size: 12.5px;
   }
 
   .catalog__img {
@@ -793,10 +789,6 @@ button {
 
   .send-toworrow {
     font-size: 11.5px;
-  }
-
-  .dilvery__list-popup {
-    font-size: 15px;
   }
 
   .catalog__img {
