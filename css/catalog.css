@@ -368,7 +368,7 @@ button {
   border-radius: 5px;
 }
 
-.dilvery__list-popup {
+.dilvery__list-item {
   font-size: 17px;
 }
 
@@ -387,7 +387,7 @@ button {
     margin-right: 16px;
   }
 
-  .dilvery__list-popup {
+  .dilvery__list-item {
     font-size: 16.5px;
   }
 
@@ -618,8 +618,8 @@ button {
     font-size: 35px;
   }
 
-  .dilvery__list-popup {
-    font-size: 15.5px !important;
+  .dilvery__list-item {
+    font-size: 15.3px !important;
   }
 
   .description__img {
@@ -783,7 +783,7 @@ button {
     font-size: 29px;
   }
 
-  .dilvery__list-popup {
+  .dilvery__list-item {
     font-size: 14.5px !important;
   }
 
@@ -862,7 +862,7 @@ button {
     width: 200px;
   }
 
-  .dilvery__list-popup {
+  .dilvery__list-item {
     font-size: 14.5px;
   }
 
