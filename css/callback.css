@@ -1,0 +1,191 @@
+.callback-modal {
+  background-color: #ffffff;
+  border-radius: 6px;
+  padding: 18px 38px;
+  display: none;
+  margin-bottom: 8px;
+  max-width: 230px;
+}
+
+.callback-open {
+  margin-bottom: 6px;
+  transition: color 60ms ease-out;
+}
+
+.callback-open:hover {
+  color: #FF575D !important;
+}
+
+.callback-modal-active {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.callback {
+  display: inline-flex;
+  flex-direction: column;
+  user-select: none;
+}
+
+#sendMessageButton {
+  background-color: #ff394d;
+  border: none;
+  color: #ffffff;
+  width: 100%;
+  height: 48px;
+  border-radius: 46px;
+  text-transform: uppercase;
+  font-size: 15px;
+  font-weight: 500;
+  letter-spacing: 0.06em;
+  text-align: center;
+  box-shadow: inset 0 -3px 0 0 #d5172a;
+  transition: background-color 60ms ease-out;
+}
+
+#sendMessageButton:hover {
+  background-color: #ff5263;
+}
+
+#messageInput {
+  width: 196px;
+  height: 40px;
+  margin-bottom: 10px;
+  padding: 2px 12px;
+  font-size: 16.5px;
+  font-weight: 400;
+  border: 2px solid #e5e5e5;
+  color: #a6a6a6;
+  border-radius: 6px;
+}
+
+#messageInput:focus-visible {
+  border: 2px solid #49D339;
+  outline: none;
+}
+
+.callback-modal__header {
+  font-size: 16px;
+  font-weight: 500;
+  color: #383838;
+  margin-bottom: 5px;
+}
+
+/** callback notification **/
+.modal-notification {
+  margin-top: 6px;
+  text-align: center;
+  display: none;
+  color: #49D339;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+@media (max-width: 540px) {
+  .modal-notification {
+    font-size: 15px;
+  }
+
+  .callback-modal {
+    border-radius: 4px;
+    padding: 14px 38px;
+    max-width: 240px;
+  }
+
+  #messageInput {
+    width: 217px;
+    height: 36px;
+    margin-bottom: 8px;
+    padding: 2px 10px;
+    font-size: 16px;
+    border-radius: 4px;
+  }
+
+  #sendMessageButton {
+    width: 100%;
+    height: 44px;
+    font-size: 14px;
+  }
+
+  .callback-modal__header {
+    font-size: 15px;
+  }
+
+  .callback-open {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 468px) {
+  .modal-notification {
+    font-size: 14px;
+  }
+
+  .callback-modal {
+    border-radius: 4px;
+    padding: 13px 40px;
+    max-width: 260px;
+  }
+
+  #messageInput {
+    width: 241px;
+    height: 35px;
+    margin-bottom: 7px;
+    padding: 2px 8px;
+    font-size: 15px;
+    border-radius: 4px;
+  }
+
+  #sendMessageButton {
+    width: 100%;
+    height: 42px;
+    font-size: 14px;
+  }
+
+  .callback-modal__header {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 391px) {
+  .callback-open {
+    font-size: 14.5px;
+  }
+
+  #sendMessageButton {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 368px) {
+  .callback-modal {
+    border-radius: 4px;
+    padding: 13px 44px;
+    max-width: 200px;
+  }
+
+  #messageInput {
+    width: 190px;
+    height: 32px;
+    margin-bottom: 7px;
+    padding: 2px 8px;
+    font-size: 15px;
+    border-radius: 4px;
+  }
+
+  #sendMessageButton {
+    width: 100%;
+    height: 42px;
+    font-size: 13px;
+  }
+
+  .callback-modal__header {
+    font-size: 14px;
+  }
+
+  .callback-open {
+    font-size: 14px;
+  }
+}
