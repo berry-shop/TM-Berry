@@ -44,20 +44,7 @@
 
   <div class="site__container">
 
-    <section id="important" class="important__info" style="background-image: linear-gradient(
-      90deg,
-      rgb(255, 56, 103) 0%,
-      rgb(255, 66, 107) 18%,
-      rgb(255, 77, 115) 30%,
-      rgb(255, 87, 123) 40%,
-      rgb(255, 92, 127) 49%,
-      rgb(255, 102, 135) 58%,
-      rgb(255, 112, 143) 67%,
-      rgb(255, 117, 147) 75%,
-      rgb(254, 128, 158) 83%,
-      rgb(254, 134, 162) 92%,
-      rgb(253, 139, 166) 100%
-    ); width: 100%; padding: 12px 0; text-align: center;">
+    <section id="important" class="important__info" style="width: 100%; padding: 12px 0; text-align: center;">
       <span class="important__info-text" style="color: #ffffff; font-weight: 400; letter-spacing: 0.03em;">Замовлення тільки по телефону!</span> 
     </section>
     <!-- HEADER -->
@@ -140,13 +127,11 @@
       <div class="container">
         <div class="hero_text">
           <div class="header__title">
-            <h1>пральні порошки від компанії <br>Berry</h1>
+            <h1>пральні порошки від Berry</h1>
           </div>
           <div class="header__subtitle">
             <p>
-              <span>
-                Формуємо дилерську мережу!
-              </span> 
+              <span>Формуємо дилерську мережу!</span> 
               Спеціальні пропозиції з&nbsp;унікальними умовами з&nbsp;оптових закупівель для
               дилерів. Для більш детальної інформації, будь ласка, зв&rsquo;яжіться з&nbsp;нами.
             </p>
@@ -186,9 +171,8 @@
       </div>
 
       <!-- top slider -->
-      <div class="container">
-        <div class="slide__content" style="display: flex; gap: 15px;">
-
+      <div class="slider-container">
+        <div class="slide__content">
           <!-- Slider main container -->
           <div class="swiper">
             <!-- Additional required wrapper -->
@@ -197,15 +181,15 @@
               <div class="swiper-slide"> 
                 <picture>
                   <source class="swiper__image" media="(max-width: 472px)" srcset="./img/discount.jpg">
-                  <source class="swiper__image" media="(max-width: 816px)" srcset="./img/discount2.jpg">
-                  <img loading="lazy" class="swiper__image" src="./img/discount3.jpg" alt="акція">
+                  <source class="swiper__image" media="(max-width: 840px)" srcset="./img/discount2.jpg">
+                  <img loading="lazy" decoding="async" class="swiper__image" src="./img/discount3.jpg" alt="акція порошок медова диня 400гр в подарунок після покупки порошка тропічні фрукти 10кг">
                 </picture>
               </div>
               <div class="swiper-slide">
                 <picture>
                   <source class="swiper__image" media="(max-width: 472px)" srcset="./img/main-slider3.jpg">
-                  <source class="swiper__image" media="(max-width: 816px)" srcset="./img/main-slider2.jpg">
-                  <img loading="lazy" class="swiper__image" src="./img/main-slider.jpg" alt="акція">
+                  <source class="swiper__image" media="(max-width: 840px)" srcset="./img/main-slider2.jpg">
+                  <img loading="lazy" decoding="async" class="swiper__image" src="./img/main-slider.jpg" alt="купуйте порошки та соду Berry">
                 </picture>
               </div>
             </div>
@@ -348,7 +332,7 @@
                     <li>пн - пт</li>
                     <li>9:00-18:00</li>
                     <li>сб - нд</li>
-                    <li style="color: #ff394d;">вихідний</li>
+                    <li style="color: var(--accent-color-darker);">вихідний</li>
                   </ul>
                 </div>
               </div>
