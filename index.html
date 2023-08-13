@@ -63,7 +63,7 @@
                 <li class="nav__item nav__item-icon"><i class="fa-regular fa-address-book burger-visible" title="Контакти" aria-label="контакти"></i><a href="#contacts" class="nav__link">Контакти</a></li>
                 <li class="nav__item nav__item-icon"><i class="fa-regular fa-circle-question burger-visible" title="Про нас" aria-label="про нас"></i><a href="#about" class="nav__link">Про нас</a></li>
                 <li class="nav__item nav__item-icon"><i class="fa-solid fa-box burger-visible" title="Доставка і оплата" aria-label="доставка і оплата"></i><a href="#delivery" class="nav__link">Доставка і оплата</a></li>
-                <li class="nav__item">
+                <li class="nav__item nav__item-links">
                   <div class="soc__links soc__links-header">
                     <a class="nav__link-icon" href="https://t.me/+380683685557" aria-label="Посилання на телеграм" title="telegram" target="_blank">
                       <i class="fa-brands fa-telegram"></i>
@@ -83,7 +83,7 @@
 
               <div class="cart" tabindex="0">
                 <div class="cart__img">
-                  <img loading="lazy" decoding="async" class="img__cart" src="./img/cart.svg" alt="кошик">
+                  <img loading="lazy" decoding="async" class="img__cart" src="./img/cart.svg" alt="кошик" title="кошик">
                   <span class="cart__quantity">0</span>
                 </div>
                 <!-- временно не работает (контент корзины)
@@ -143,10 +143,10 @@
             </a>
           </div>
           <div class="callback">
-            <span role="button" tabindex="0" class="callback-open" style="color: #ffffff; cursor: pointer;">Передзвоніть мені <i class="fa-solid fa-chevron-down"></i></span>
+            <span role="button" tabindex="0" data-open class="callback-open" style="color: #ffffff; cursor: pointer;">Передзвоніть мені <i class="fa-solid fa-chevron-down"></i></span>
             <div class="callback-modal">
               <span class="callback-modal__header">Введіть номер телефону</span>
-              <input type="text" name="phone" id="messageInput"/>
+              <input type="text" name="phone" id="messageInput" placeholder="+38 (___) ___-__-__"/>
               <button type="button" id="sendMessageButton">Відправити</button>
               <div class="modal-notification">
                 <!-- текст окна обратной свящи -->
@@ -222,7 +222,7 @@
             </div>
           </div>
         </div>
-        
+
         <div class="items__container">
           <!-- карты товара -->
           <div class="catalog__cards" id="paginated-list" aria-live="polite">
@@ -258,7 +258,7 @@
             <iframe aria-label="мапа" title="мапа" class="map" style="margin-bottom: 10px;" width="100%" height="440px" frameborder="0" scrolling="no" marginheight="0"
               marginwidth="0"
               src="https://www.openstreetmap.org/export/embed.html?bbox=30.38685322131059%2C50.480797197549045%2C30.39873004282854%2C50.48589680581797&amp;layer=mapnik&amp;marker=50.48334707046941%2C30.39279163206959"></iframe><br /><small></small>
-               
+            
             <div class="contacts__info">
 
               <div class="contacts__item contacts__left">
