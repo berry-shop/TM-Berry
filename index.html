@@ -2,11 +2,13 @@
 <html lang="uk">
 
 <head>
+  <title>Пральний порошок та сода | TM Berry</title>
   <!-- meta properties -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Магазин пральних порошків та соди Berry. Пральні порошки та інші послуги від компанії &quot;TM Berry&quot;">
   <meta name="keywords" content="купити пральний порошок Berry, Berry, універсальний пральний порошок, порошок без фосфатів, порошок для білого, порошок для ручного прання">
+  <meta property="og:locale" content="uk_UK">
   <meta property="og:image" content="https://images.prom.ua/3159053800_w220_h220_pralnij-poroshok-universalnij.jpg">
   <meta property="og:title" content="Пральні порошки в Києві від компанії &quot;TM Berry&quot;.">
   <meta property="og:description" content="Купити Пральні порошки в Києві - ціни, товари та послуги компанії &quot;TM Berry&quot;: +380 (68) 368-55-57">
@@ -16,7 +18,6 @@
   <meta name="language" content="uk">
   <meta name="robots" content="index, follow">
   <link rel="canonical" href="https://berry-shop.github.io/TM-Berry/">
-  <title>Пральний порошок та сода | TM Berry</title>
   <!-- favicon -->
   <link rel="apple-touch-icon" sizes="180x180" href="./img/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon-32x32.png">
@@ -24,11 +25,10 @@
   <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
   <meta name="msapplication-TileColor" content="#da532c">
   <meta name="theme-color" content="#121212">
-  <!-- style -->
+  <!-- styles -->
   <link rel="stylesheet" type="text/css" href="./css/style.css">
-  <!-- scripts -->
+  <!-- catalog preload -->
   <link rel="preload" href="./js/cardsArray.js" as="script">
-  <script src="https://unpkg.com/imask"></script>
   <!-- fonts preload -->
   <link rel="preload" href="./src/fonts/Rubik-Regular.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="./src/fonts/Rubik-Medium.woff2" as="font" type="font/woff2" crossorigin>
@@ -38,10 +38,14 @@
   <!-- slider -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
   <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+  <!-- map -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""/>
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+  <!-- phone mask -->
+  <script src="https://unpkg.com/imask"></script>
 </head>
 
 <body class="page__body">
-
   <div class="site__container">
 
     <section id="important" class="important__info" style="width: 100%; padding: 12px 0; text-align: center;">
@@ -58,11 +62,11 @@
             </a>
             <nav class="nav" data-nav>
               <ul class="nav__list">
-                <li class="nav__item nav__item-icon"><i class="fa-solid fa-house burger-visible" title="Головна" aria-label="головна"></i><a href="#important" class="nav__link">Головна</a></li>
-                <li class="nav__item nav__item-icon"><i class="fa-solid fa-list-ul burger-visible" title="Каталог" aria-label="каталог"></i><a href="#catalog" class="nav__link">Каталог</a></li>
-                <li class="nav__item nav__item-icon"><i class="fa-regular fa-address-book burger-visible" title="Контакти" aria-label="контакти"></i><a href="#contacts" class="nav__link">Контакти</a></li>
-                <li class="nav__item nav__item-icon"><i class="fa-regular fa-circle-question burger-visible" title="Про нас" aria-label="про нас"></i><a href="#about" class="nav__link">Про нас</a></li>
-                <li class="nav__item nav__item-icon"><i class="fa-solid fa-box burger-visible" title="Доставка і оплата" aria-label="доставка і оплата"></i><a href="#delivery" class="nav__link">Доставка і оплата</a></li>
+                <li class="nav__item nav__item-icon"><a href="#important" class="nav__link"><i class="fa-solid fa-house burger-visible" title="Головна" aria-label="головна"></i> Головна</a></li>
+                <li class="nav__item nav__item-icon"><a href="#catalog" class="nav__link"><i class="fa-solid fa-list-ul burger-visible" title="Каталог" aria-label="каталог"></i> Каталог</a></li>
+                <li class="nav__item nav__item-icon"><a href="#contacts" class="nav__link"><i class="fa-regular fa-address-book burger-visible" title="Контакти" aria-label="контакти"></i> Контакти</a></li>
+                <li class="nav__item nav__item-icon"><a href="#about" class="nav__link"><i class="fa-regular fa-circle-question burger-visible" title="Про нас" aria-label="про нас"></i> Про нас</a></li>
+                <li class="nav__item nav__item-icon"><a href="#delivery" class="nav__link"><i class="fa-solid fa-box burger-visible" title="Доставка і оплата" aria-label="доставка і оплата"></i> Доставка і оплата</a></li>
                 <li class="nav__item nav__item-links">
                   <div class="soc__links soc__links-header">
                     <a class="nav__link-icon" href="https://t.me/+380683685557" aria-label="Посилання на телеграм" title="telegram" target="_blank">
@@ -196,7 +200,6 @@
             <!-- If we need pagination -->
             <div class="swiper-pagination"></div>
           </div>
-
         </div>
       </div>
       <!-- catalog -->
@@ -244,7 +247,6 @@
         </nav>
       </section>
 
-
       <!-- контакты -->
       <section id="contacts" class="section__contacts">
         <div class="container">
@@ -255,9 +257,7 @@
 
           <div class="contacts">
 
-            <iframe aria-label="мапа" title="мапа" class="map" style="margin-bottom: 10px;" width="100%" height="440px" frameborder="0" scrolling="no" marginheight="0"
-              marginwidth="0"
-              src="https://www.openstreetmap.org/export/embed.html?bbox=30.38685322131059%2C50.480797197549045%2C30.39873004282854%2C50.48589680581797&amp;layer=mapnik&amp;marker=50.48334707046941%2C30.39279163206959"></iframe><br /><small></small>
+            <div aria-label="мапа" class="map" id="map" style="z-index: 10;"></div>
             
             <div class="contacts__info">
 
@@ -514,6 +514,7 @@
   <script defer src="./js/callbackModal.js"></script>
   <script defer src="./js/refundModal.js"></script>
   <script defer src="./js/howToGet.js"></script>
+  <script defer src="./js/map.js"></script>
 </body>
 
 </html>
