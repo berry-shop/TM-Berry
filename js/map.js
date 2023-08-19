@@ -5,10 +5,10 @@ L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
 }).addTo(map);
 
 var myIcon = L.icon({
-  iconUrl: 'https://berry-shop.github.io/TM-Berry/img/location.svg',
+  iconUrl: 'https://i.pinimg.com/originals/5b/51/99/5b51999793b431c6b1becf4c9f21c9c6.png',
   iconSize: [50, 50],
   iconAnchor: [29, 53],
-  shadowUrl: 'https://berry-shop.github.io/TM-Berry/img/shadow.svg',
+  shadowUrl: 'https://i.pinimg.com/originals/5b/51/99/5b51999793b431c6b1becf4c9f21c9c6.png',
   shadowSize: [44, 92],
   shadowAnchor: [13, 61]
 });
