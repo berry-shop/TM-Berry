@@ -5,12 +5,12 @@ L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
 }).addTo(map);
 
 var myIcon = L.icon({
-  iconUrl: '/img/location.png',
+  iconUrl: 'https://iili.io/HbCmIv2.png',
   iconSize: [37, 51],
-  iconAnchor: [29, 53],
-  shadowUrl: '/img/shadow.png',
-  shadowSize: [44, 92],
-  shadowAnchor: [13, 61]
+  iconAnchor: [20, 53],
+  shadowUrl: 'https://iili.io/HbCmzYl.png',
+  shadowSize: [42, 54],
+  shadowAnchor: [11, 45]
 });
 
 L.marker([50.48337, 30.39276], {
