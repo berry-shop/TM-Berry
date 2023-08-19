@@ -5,10 +5,10 @@ L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
 }).addTo(map);
 
 var myIcon = L.icon({
-  iconUrl: '../img/location.svg',
+  iconUrl: '/img/location.svg',
   iconSize: [50, 50],
   iconAnchor: [29, 53],
-  shadowUrl: '../img/shadow.svg',
+  shadowUrl: '/img/shadow.svg',
   shadowSize: [44, 92],
   shadowAnchor: [13, 61]
 });
