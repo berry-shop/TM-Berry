@@ -1,0 +1,146 @@
+@import url(./partials/catalog.css);
+@import url(./partials/contacts.css);
+@import url(./partials/swiper.css);
+@import url(./partials/pagination.css);
+@import url(./partials/about.css);
+@import url(./partials/footer.css);
+@import url(./partials/overlay.css);
+@import url(./partials/callback.css);
+@import url(./partials/checkbox.css);
+@import url(./partials/survey.css);
+@import url(./partials/vars.css);
+@import url(./partials/header.css);
+@import url(./partials/burger.css);
+@import url(./partials/cart.css);
+@import url(./partials/to-start.css);
+@import url(./partials/normalizer.css);
+
+@font-face {
+  font-family: "Rubik";
+  src: url(../src/fonts/Rubik-Regular.woff2),
+    url(../src/fonts/Rubik-Regular.ttf);
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Rubik";
+  src: url(../src/fonts/Rubik-Medium.woff2),
+    url(../src/fonts/Rubik-Medium.ttf);
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+html {
+  -webkit-text-size-adjust: none;
+  -webkit-overflow-scrolling: touch;
+  -moz-text-size-adjust: none;
+  -moz-overflow-scrolling: touch;
+}
+
+html,
+body {
+  scrollbar-gutter: stable;
+}
+
+::selection {
+  background-color: var(--accent-color);
+  color: var(--white);
+}
+
+body {
+  position: relative;
+  box-sizing: border-box;
+  font-family: var(--main-font), sans-serif;
+  background-color: var(--white);
+}
+
+body::-webkit-scrollbar {
+  width: 7px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: var(--accent-color);
+  border-radius: 5px;
+}
+
+body::-webkit-scrollbar-track {
+  background-color: #181818;
+}
+
+img {
+  user-select: none;
+}
+
+.container {
+  max-width: 1240px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+.items__container {
+  max-width: 1240px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+@media (max-width: 992px) {
+  .container {
+    padding: 0 15px;
+  }
+
+  .items__container {
+    padding: 0 15px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 0 12px;
+  }
+
+  .items__container {
+    padding: 0;
+  }
+
+  .burger-visible {
+    display: block !important;
+  }
+
+  .nav__item-links {
+    display: block;
+  }
+}
+
+@media (max-width: 468px) {
+  .container {
+    padding: 0 10px;
+  }
+}
+
+.site__container {
+  overflow: hidden;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: #000000;
+}
+
+.page__body {
+  overflow-x: hidden;
+}
+
+.stop-scroll {
+  overflow: hidden !important;
+}
+
+.fa-xmark {
+  color: #CFCFCF;
+}
