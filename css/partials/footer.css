@@ -279,6 +279,11 @@
   .schedule__options {
     font-weight: 400;
   }
+
+  .footer__lists {
+    margin-top: 10px;
+    margin-bottom: 0;
+  }
 }
 
 @media (max-width: 515px) {
@@ -315,11 +320,6 @@
     font-size: 17px;
   }
 
-  .footer__lists {
-    margin-top: 10px;
-    margin-bottom: 0;
-  }
-
   .footer__item ul {
     margin: 0 0;
   }
@@ -330,6 +330,10 @@
 
   .refund span {
     border-bottom: 1px dotted;
+  }
+
+  .soc__title div {
+    margin-top: 12px;
   }
 }
 
