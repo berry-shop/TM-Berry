@@ -146,13 +146,13 @@
               <i class="fa-solid fa-phone" style="margin-bottom: 2px;"></i>
             </a>
           </div>
-          <div class="callback">
-            <span role="button" tabindex="0" data-open class="callback-open" style="color: #ffffff; cursor: pointer;">Передзвоніть мені <i class="fa-solid fa-chevron-down"></i></span>
-            <div class="callback-modal">
-              <span class="callback-modal__header">Введіть номер телефону</span>
+          <div class="callback" id="callbackModal">
+            <span role="button" tabindex="0" data-open class="callback-open" id="callbackModal" style="color: #ffffff; cursor: pointer;">Передзвоніть мені <i class="fa-solid fa-chevron-down" id="callbackModal"></i></span>
+            <div class="callback-modal" id="callbackModal">
+              <span class="callback-modal__header" id="callbackModal">Введіть номер телефону</span>
               <input type="text" name="phone" id="messageInput" placeholder="+38 (___) ___-__-__"/>
               <button type="button" id="sendMessageButton">Відправити</button>
-              <div class="modal-notification">
+              <div class="modal-notification" id="callbackModal">
                 <!-- текст окна обратной свящи -->
               </div>
             </div>
@@ -395,6 +395,41 @@
 
           </div>
 
+          <div class="articles">
+            <h4 class="articles__header" style="margin-top: 0;">Berry - магазин якісного прального порошку та соди</h4>
+            <p class="articles__text" style="margin: 0;">
+              Компанія Berry надає вашому одягу та побутовим предметам найвищий рівень догляду. Наша місія полягає в
+              забезпеченні легкості, ефективності та екологічності у процесі прання.
+
+              <br>Пральні порошки від Berry розроблені з використанням передових технологій, що гарантує видалення
+              навіть найскладніших плям, зберігаючи при цьому барви та структуру тканин. Вони мають
+              гіпоалергенні властивості, роблячи їх ідеальними для чутливої шкіри.
+
+              <br>Сода Berry - ваш незамінний помічник в побуті. Вона допомагає видалити неприємні запахи, здійснює
+              відбілювання, ефективно очищає поверхні.
+              Натуральність соди та її відмінна ефективність роблять її невід'ємною частиною вашого господарського
+              арсеналу.
+
+              <br>Обираючи продукцію Berry, ви отримуєте гарантовану якість, надійність та піклування про довкілля.
+              Наші продукти створюють бездоганну чистоту, найвищий комфорт та позитивний настрій у будь-якому домі.
+            </p>
+            <h4 class="articles__header" style="margin-top: 18px;">Переваги онлайн-магазину</h4>
+            <p class="articles__text" style="margin: 0;">
+              Які б товари ви не шукали, вони знайдуться в онлайн-каталозі. Доставка продукції
+              здійснюється Новою Поштою по всій Україні. Відстежувати статус замовлення зручно в особистому кабінеті.
+              Оплата приймається готівкою та за перерахуванням. Заходьте на шопінг!
+            </p>
+            <h4 class="articles__header" style="margin-top: 18px;">Правила поводження с засобами побутової хімії</h4>
+            <p class="articles__text" style="margin: 0;">
+              Всі засоби побутової хімії будуть безпечні, якщо їх застосовувати за
+              прямим призначенням та відповідно до інструкцій та рекомендацій щодо їх
+              використання.
+              Усі засоби побутової хімії будуть небезпечними, якщо вони потраплять на тіло
+              або всередину організму, викликавши отруєння чи роздратування, опік
+              шкіри.
+            </p>
+          </div>
+
           <div class="comfort__survey">
             <span>Наскільки вам зручно на сайті?</span>
             <a class="comfort__survey-button" target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSfvUz6_dyFFP74QyGbodZgQUJ7HJ09EfnYqp2GxULwmHxQbvg/viewform?usp=sf_link">
@@ -419,8 +454,8 @@
             <div class="footer__item">
               <ul>
                 <li class="delivery__title">Способи доставки</li>
-                <li class="delivery__options">Доставка "Самовивіз"</li>
-                <li class="delivery__options">Доставка "Нова Пошта"</li>
+                <li class="delivery__options">Самовивіз</li>
+                <li class="delivery__options">Нова Пошта</li>
               </ul>
             </div>
 
@@ -444,8 +479,8 @@
                 <li class="schedule__options">Субота - вихідний</li>
                 <li class="schedule__options">Неділя - вихідний</li>
               </ul>
-              <div class="refund" role="button" tabindex="0">
-                <span style="color: #ffffff; cursor: pointer; font-weight: 500;"><i aria-label="повернення" class="fa-solid fa-right-left"></i> Умови повернення</span>
+              <div class="refund" >
+                <span class="refund__btn" role="button" tabindex="0" style="color: #ffffff; cursor: pointer; font-weight: 500;"><i aria-label="повернення" class="fa-solid fa-right-left"></i> Умови повернення</span>
               </div>
               <div class="refund__info">
                 <div class="close-box">
@@ -490,6 +525,15 @@
                   <i class="fa-brands fa-viber"></i>
                 </a>
               </div>
+              <div class="deliver-logos" style="margin-top: 19px;">
+                <img loading="lazy" src="./img/novaposhta.png" style="max-width: 28px; height: auto; margin-right: 4px;" alt="працюємо з нова пошта" title="працюємо з Нова Пошта">
+                <img loading="lazy" src="./img/urkposhta.png" style="max-width: 28px; height: auto;" alt="працюємо з укрпошта" title="працюємо з Укрпошта">
+              </div>
+              <div class="accepted-payment" style="display: flex; flex-direction: row;">
+                <img loading="lazy" decoding="async" src="./img/apay.svg" alt="Apple Pay" title="Apple Pay" style="margin-right: 2.5px;">
+                <img loading="lazy" decoding="async" src="./img/gpay.svg" alt="Google Pay" title="Google Pay">
+                <img loading="lazy" decoding="async" src="./img/visamastercard.svg" alt="Visa/Mastercard" title="Visa/Mastercard" style="max-width: 100px; height: auto;">
+              </div>
             </div>
           </div>
 
@@ -504,11 +548,11 @@
   </div>
 
   <script src="./js/cardsArray.js"></script>
+  <script src="./js/swiper.js"></script>
   <script src="./js/message.js"></script>
+  <script src="./js/map.js"></script>
   <script src="./js/phoneMask.js"></script>
   <script src="./js/fixed__menu.js"></script>
-  <script src="./js/swiper.js"></script>
-  <script src="./js/map.js"></script>
   <script defer src="./js/anchor.js"></script>
   <script defer src="./js/checkbox.js"></script>
   <script defer src="./js/burger.js"></script>
