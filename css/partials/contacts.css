@@ -59,6 +59,10 @@
   padding: 10px 18px 20px 18px;
   opacity: 0;
   transition: opacity 200ms ease-out, height 310ms ease-out, font-size 340ms ease-out;
+  -webkit-transition: opacity 200ms ease-out, height 310ms ease-out, font-size 340ms ease-out;
+  -moz-transition: opacity 200ms ease-out, height 310ms ease-out, font-size 340ms ease-out;
+  -o-transition: opacity 200ms ease-out, height 310ms ease-out, font-size 340ms ease-out;
+  -ms-transition: opacity 200ms ease-out, height 310ms ease-out, font-size 340ms ease-out;
 }
 
 .howToGet__modal-active {
