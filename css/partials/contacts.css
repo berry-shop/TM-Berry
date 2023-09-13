@@ -58,11 +58,11 @@
   text-align: left;
   padding: 10px 18px 20px 18px;
   opacity: 0;
-  transition: opacity 140ms ease, height 220ms ease, font-size 230ms ease;
-  -webkit-transition: opacity 140ms ease, height 220ms ease, font-size 230ms ease;
-  -moz-transition: opacity 140ms ease, height 220ms ease, font-size 230ms ease;
-  -o-transition: opacity 140ms ease, height 220ms ease, font-size 230ms ease;
-  -ms-transition: opacity 140ms ease, height 220ms ease, font-size 230ms ease;
+  transition: all 210ms ease;
+  -webkit-transition: all 210ms ease;
+  -moz-transition: all 210ms ease;
+  -o-transition: all 210ms ease;
+  -ms-transition: all 220ms ease;
   transform: translate3d(0, 0, 0);
   /* Применяем аппаратное ускорение */
 }
