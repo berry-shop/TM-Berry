@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <url>
+        <loc>https://berry-shop.github.io/TM-Berry/</loc> <!-- Замените на URL вашей главной страницы -->
+        <changefreq>weekly</changefreq> <!-- Частота изменений (может быть другой) -->
+        <priority>1.0</priority> <!-- Приоритет (может быть другой) -->
+    </url>
+</urlset>
