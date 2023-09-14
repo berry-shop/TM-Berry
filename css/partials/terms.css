@@ -1,0 +1,115 @@
+.terms__content {
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 999;
+  overflow-y: auto;
+  max-width: 100%;
+  width: 50%;
+  height: 100%;
+  background-color: #ffffff;
+  transform: translateY(-100%);
+  transition: transform 220ms ease-in-out;
+}
+
+.terms__content--visible {
+  transform: none;
+}
+
+.terms__container {
+  padding: 15px 22px;
+}
+
+.terms__top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 6px 0 8px 0;
+  border-bottom: 1px solid var(--light-grey);
+}
+
+.termsContentCloseBtn {
+  font-size: 26px;
+  cursor: pointer;
+  transition: color 60ms ease-out;
+}
+
+.termsContentCloseBtn:hover {
+  color: var(--accent-color-darker);
+}
+
+.usingTerms {
+  margin-top: 10px;
+}
+
+.termsContentOpenBtn {
+  font-size: calc(14px + 2 * (100vw / 1920)) !important;
+  color: var(--white);
+  border-bottom: 1px solid;
+  transition: color 60ms ease-out;
+}
+
+.termsContentOpenBtn:hover {
+  color: var(--accent-color-lighter);
+}
+
+.terms__top-header {
+  font-size: calc(13px + 3 * (100vw / 1920)) !important;
+  font-weight: 500;
+  margin: 5px 0;
+}
+
+.terms__middle--header {
+  font-size: calc(13px + 3 * (100vw / 1920)) !important;
+  font-weight: 500;
+  margin: 14px 0 10px 0;
+}
+
+.terms__middle--text {
+  font-size: calc(13px + 3 * (100vw / 1920)) !important;
+  margin-top: 8px;
+}
+
+@media (max-width: 1366px) {
+  .terms__content {
+    width: 53%;
+  }
+}
+
+@media (max-width: 992px) {
+  .terms__content {
+    width: 60%;
+  }
+}
+
+@media (max-width: 768px) {
+  .terms__content {
+    width: 100%;
+  }
+
+  .terms__container {
+    padding: 10px 16px 20px 16px;
+  }
+
+  .termsContentOpenBtn {
+    font-weight: 500 !important;
+  }
+}
+
+@media (max-width: 767px) {
+  .terms__middle--text {
+    font-size: calc(14px + (3 + 3 * 0.7) * ((100vw - 320px) / 1920)) !important;
+  }
+
+  .terms__middle--header {
+    font-size: calc(14px + (4 + 4 * 0.7) * ((100vw - 320px) / 1920)) !important;
+  }
+
+  .terms__top-header {
+    font-size: calc(14px + (4 + 4 * 0.7) * ((100vw - 320px) / 1920)) !important;
+  }
+
+  .termsContentOpenBtn {
+    font-size: calc(14px + (4 + 4 * 0.7) * ((100vw - 320px) / 1920)) !important;
+  }
+}
