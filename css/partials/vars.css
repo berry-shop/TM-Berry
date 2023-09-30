@@ -1,0 +1,44 @@
+:root {
+  /** colors **/
+  --top-gradient: linear-gradient(90deg,
+      #000000 1%,
+      #474068 41%,
+      #665b95 49%,
+      #7b6eb4 52%,
+      #8e80d1 52%,
+      #a08fea 52%,
+      #a08fea 52%,
+      #8e80d1 51%,
+      #7b6eb4 52%,
+      #665b95 54%,
+      #474068 61%,
+      #000000 99%);
+  --accent-gradient: linear-gradient(115deg,
+      #ff243a 0%,
+      #fe3e48 64%,
+      #ff6f6f 100%);
+  --section-header-color: #221f1f;
+  --body-color: #fdfdfd;
+  --white: #ffffff;
+  --black: #000000;
+  --grey: #43464e;
+  --greyV2: #d8d8d8;
+  --greyV3: #808080;
+  --greyV4: #8c8c8c;
+  --middle-grey: #c6c6c6;
+  --light-grey: #ececec;
+  --border-color: #E5E5E5;
+  --shadow-color: #4a4a4a33;
+  --footer-header-color: #121212;
+  --accent-color: #ff4450;
+  --accent-color-lighter: #ff4754;
+  --accent-color-alternate: #ff273d;
+  --accent-color-darker: #ff394d;
+  --accent-color-dark: #d5172a;
+  --accept-color: #49d339;
+  --green: #31B45E;
+  --warning-color: #f7a500;
+
+  /** fonts **/
+  --main-font: "Rubik";
+}
