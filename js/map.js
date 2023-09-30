@@ -5,7 +5,7 @@ window.addEventListener('scroll', () => {
   let mapOffset = document.querySelector('#map').offsetTop;
 
   if ((scrollY >= mapOffset - 550) && (flag == 0)) {
-    var map = L.map('map').setView([50.48337, 30.39276], 17);
+    var map = L.map('map').setView([50.48337, 30.39276], 16);
 
     L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
       attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
@@ -23,13 +23,6 @@ window.addEventListener('scroll', () => {
     L.marker([50.48337, 30.39276], {
       icon: myIcon
     }).addTo(map);
-
-    var Stadia_OSMBright = L.tileLayer('https://tiles.stadiamaps.com/tiles/osm_bright/{z}/{x}/{y}{r}.{ext}', {
-      minZoom: 0,
-      maxZoom: 20,
-      ext: 'png'
-    });
-    Stadia_OSMBright.addTo(map);
 
     flag = 1;
   }
